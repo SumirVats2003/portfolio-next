@@ -124,7 +124,7 @@ a {
 }
 
 body {
-  background: url('bg-desktop.png');
+  background: url('assets/bg-desktop.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,4 +142,30 @@ body {
   padding: 1rem;
   color: var(--white);
   height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.main-content .image {
+  width: 50%;
+}
+
+.main-content .container {
+  width: 50%;
+  padding: 5rem;
+}
+
+.main-content .image .picture {
+  width: 60%;
+  height: 60%;
+  border-radius: 50rem;
+  margin: 20%;
+}
+
+.main-content .container .heading {
+  font-size: 8rem;
+}
+
+.main-content .container .content {
+  text-align: center;
 }
