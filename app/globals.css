@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -104,4 +104,42 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+/* :root {
+  --black: #011627;
+  --white: #fdfffc;
+  --accent: #3581b8;
+} */
+
+:root {
+  --black: #002233;
+  --white: #fdfffc;
+  --accent: #0066ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('bg-desktop.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: saturation;
+}
+
+.main-content {
+  z-index: 2;
+  margin: 5vh 10rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+  padding: 1rem;
+  color: var(--white);
+  height: 85vh;
 }
