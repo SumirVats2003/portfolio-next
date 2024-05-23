@@ -106,17 +106,17 @@ a {
   }
 } */
 
-/* :root {
+:root {
   --black: #011627;
   --white: #fdfffc;
   --accent: #3581b8;
-} */
+}
 
-:root {
+/* :root {
   --black: #002233;
   --white: #fdfffc;
   --accent: #0066ff;
-}
+} */
 
 * {
   margin: 0;
@@ -124,48 +124,26 @@ a {
 }
 
 body {
-  background: url('assets/bg-desktop.png');
+  background: url('assets/bg-desktop.svg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: saturation;
 }
 
-.main-content {
-  z-index: 2;
-  margin: 5vh 10rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  backdrop-filter: blur(50px);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
-  padding: 1rem;
+.btn {
+  background-color: var(--accent);
   color: var(--white);
-  height: 85vh;
-  display: flex;
-  align-items: center;
+  border: 0;
+  box-shadow: 0 10px 10px 0 var(--black);
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  /* margin: 2rem; */
+  transition: 0.2s ease-in-out;
 }
 
-.main-content .image {
-  width: 50%;
-}
-
-.main-content .container {
-  width: 50%;
-  padding: 5rem;
-}
-
-.main-content .image .picture {
-  width: 60%;
-  height: 60%;
-  border-radius: 50rem;
-  margin: 20%;
-}
-
-.main-content .container .heading {
-  font-size: 8rem;
-}
-
-.main-content .container .content {
-  text-align: center;
+.btn:hover {
+  box-shadow: none;
+  transition: 0.2s ease-in-out;
 }
